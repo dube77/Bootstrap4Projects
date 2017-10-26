@@ -30,3 +30,43 @@ body {
 		height: 100%;
 	}
 }
+
+#about {
+	.info-header {
+		width: 50%;
+		margin: auto;
+		border-bottom: 1px #ddd solid;
+	}
+}
+
+#authors {
+	img {
+		margin-top: -50px;
+	}
+
+	.fa {
+		font-size: 25px;
+	}
+
+	.card {
+		transition: 0.35s linear;
+
+		h5 {
+			color: #828282;
+		}
+	}
+
+	.card:hover {
+		background: $primary-color;
+		color: #fff;
+
+		.fa {
+			color: #fff;
+		}
+
+		h5 {
+			color: #fff;
+		}
+
+	}
+}
