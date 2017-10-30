@@ -28,7 +28,7 @@
 						<a href="posts.html" class="nav-link">Posts</a>
 					</li>
 					<li class="nav-item px-2">
-						<a href="categories.html" class="nav-link active">Categories</a>
+						<a href="categories.html" class="nav-link">Categories</a>
 					</li>
 					<li class="nav-item px-2">
 						<a href="users.html" class="nav-link">Users</a>
@@ -52,11 +52,11 @@
 
 	<!-- Header -->
 
-	<header id="main-header" class="py-2 bg-success text-white">
+	<header id="main-header" class="py-2 bg-primary text-white">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
-					<h1><i class="fa fa-folder"></i> Categories</h1>
+					<h1><i class="fa fa-gear"></i> Settings</h1>
 				</div>
 			</div>
 		</div>
@@ -67,68 +67,60 @@
 	<section id="action" class="py-4 mb-4 bg-light">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 ml-auto">
-					<div class="input-group">
-						<input type="text" placeholder="Search" class="form-control">
-						<span class="input-group-btn">
-							<button class="btn btn-success">Search</button>
-						</span>
-					</div>
+				<div class="col-md-3 mr-auto">
+					<a href="index.html" class="btn btn-light btn-block">
+						<i class="fa fa-arrow-left"></i> Back To Dashboard
+					</a>
+				</div>
+				<div class="col-md-3">
+					<a href="#" class="btn btn-success btn-block">
+						<i class="fa fa-check"></i> Save Changes
+					</a>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- Categories -->
+	<!-- Settings -->
 
-	<section id="posts">
+	<section id="settings">
 		<div class="container">
 			<div class="row">
 				<div class="col">
 					<div class="card">
 						<div class="card-header">
-							<h4>Latest Categories</h4>
+							<h4>Edit Settings</h4>
 						</div>
-						<table class="table table-striped">
-							<thead class="thead-inverse">
-								<tr>
-									<th>#</th>
-									<th>Category</th>
-									<th>Date Posted</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td scope="row">1</td>
-									<td>Web Development</td>
-									<td>July 12, 2017</td>
-								</tr>
-								<tr>
-									<td scope="row">2</td>
-									<td>Tech Gadgets</td>
-									<td>July 13, 2017</td>
-								</tr>
-								<tr>
-									<td scope="row">3</td>
-									<td>Business</td>
-									<td>July 14, 2017</td>
-								</tr>
-								<tr>
-									<td scope="row">4</td>
-									<td>Health & Wellness</td>
-									<td>July 16, 2017</td>
-								</tr>
-							</tbody>
-						</table>
-						<nav class="ml-4">
-							<ul class="pagination">
-								<li class="page-item disabled"><a href="#" class="page-link">Previouse</a></li>
-								<li class="page-item active"><a href="#" class="page-link">1</a></li>
-								<li class="page-item"><a href="#" class="page-link">2</a></li>
-								<li class="page-item"><a href="#" class="page-link">3</a></li>
-								<li class="page-item"><a href="#" class="page-link">Next</a></li>
-							</ul>
-						</nav>
+						<div class="card-body">
+							<form>
+								<fieldset class="form-group">
+									<legend>Allow User Registrations</legend>
+									<div class="form-check">
+										<label class="form-check-label">
+											<input type="radio" value="yes" checked class="form-check-input"> Yes
+										</label>
+									</div>
+									<div class="form-check">
+										<label class="form-check-label">
+											<input type="radio" value="no" class="form-check-input"> No
+										</label>
+									</div>
+								</fieldset>
+								<fieldset class="form-group">
+									<legend>Homepage Format</legend>
+									<div class="form-check">
+										<label class="form-check-label">
+											<input type="radio" value="posts" checked class="form-check-input"> Post Index
+										</label>
+									</div>
+									<div class="form-check">
+										<label class="form-check-label">
+											<input type="radio" value="page" class="form-check-input"> Single Page
+										</label>
+									</div>
+								</fieldset>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>

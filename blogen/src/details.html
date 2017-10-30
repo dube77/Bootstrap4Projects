@@ -28,7 +28,7 @@
 						<a href="posts.html" class="nav-link">Posts</a>
 					</li>
 					<li class="nav-item px-2">
-						<a href="categories.html" class="nav-link active">Categories</a>
+						<a href="categories.html" class="nav-link">Categories</a>
 					</li>
 					<li class="nav-item px-2">
 						<a href="users.html" class="nav-link">Users</a>
@@ -52,11 +52,11 @@
 
 	<!-- Header -->
 
-	<header id="main-header" class="py-2 bg-success text-white">
+	<header id="main-header" class="py-2 bg-primary text-white">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
-					<h1><i class="fa fa-folder"></i> Categories</h1>
+					<h1>Post 1</h1>
 				</div>
 			</div>
 		</div>
@@ -67,68 +67,61 @@
 	<section id="action" class="py-4 mb-4 bg-light">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 ml-auto">
-					<div class="input-group">
-						<input type="text" placeholder="Search" class="form-control">
-						<span class="input-group-btn">
-							<button class="btn btn-success">Search</button>
-						</span>
-					</div>
+				<div class="col-md-3 mr-auto">
+					<a href="index.html" class="btn btn-light btn-block">
+						<i class="fa fa-arrow-left"></i> Back To Dashboard
+					</a>
+				</div>
+				<div class="col-md-3">
+					<a href="#" class="btn btn-success btn-block">
+						<i class="fa fa-check"></i> Save Changes
+					</a>
+				</div>
+				<div class="col-md-3">
+					<a href="#" class="btn btn-danger btn-block">
+						<i class="fa fa-remove"></i> Delete Post
+					</a>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- Categories -->
+	<!-- Edit Post -->
 
-	<section id="posts">
+	<section id="editpost">
 		<div class="container">
 			<div class="row">
 				<div class="col">
 					<div class="card">
 						<div class="card-header">
-							<h4>Latest Categories</h4>
+							<h4>Edit Post</h4>
 						</div>
-						<table class="table table-striped">
-							<thead class="thead-inverse">
-								<tr>
-									<th>#</th>
-									<th>Category</th>
-									<th>Date Posted</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td scope="row">1</td>
-									<td>Web Development</td>
-									<td>July 12, 2017</td>
-								</tr>
-								<tr>
-									<td scope="row">2</td>
-									<td>Tech Gadgets</td>
-									<td>July 13, 2017</td>
-								</tr>
-								<tr>
-									<td scope="row">3</td>
-									<td>Business</td>
-									<td>July 14, 2017</td>
-								</tr>
-								<tr>
-									<td scope="row">4</td>
-									<td>Health & Wellness</td>
-									<td>July 16, 2017</td>
-								</tr>
-							</tbody>
-						</table>
-						<nav class="ml-4">
-							<ul class="pagination">
-								<li class="page-item disabled"><a href="#" class="page-link">Previouse</a></li>
-								<li class="page-item active"><a href="#" class="page-link">1</a></li>
-								<li class="page-item"><a href="#" class="page-link">2</a></li>
-								<li class="page-item"><a href="#" class="page-link">3</a></li>
-								<li class="page-item"><a href="#" class="page-link">Next</a></li>
-							</ul>
-						</nav>
+						<div class="card-body">
+							<form>
+								<div class="form-group">
+									<label for="title">Title</label>
+									<input type="text" value="Post One" class="form-control">
+								</div>
+								<div class="form-group">
+									<label for="title">Category</label>
+									<select class="form-control">
+										<option value="">Web Development</option>
+										<option value="">Tech Gadgets</option>
+										<option value="">Business</option>
+										<option value="">Health & Wellness</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label for="file">Image Upload</label>
+									<input type="file" class="form-control-file">
+									<small class="form-text text-muted">Max Size 3mb</small>
+								</div>
+								<div class="form-group">
+									<label for="body">Body</label>
+									<textarea name="editor1" class="form-control">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nam perspiciatis labore nihil assumenda velit, neque fugit distinctio placeat reprehenderit earum quidem eligendi, possimus accusantium dolores id doloribus porro ipsum.</textarea>
+								</div>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>
